@@ -1,9 +1,10 @@
-package Employee;
+package Employee;   
 
 public class Subordinate extends Employee{
-    public Subordinate(String name, int sal)
+    
+    public Subordinate(String name, int salary)
     {
-        super(name, sal);
+        super(name,salary);
     }
 
     @Override
