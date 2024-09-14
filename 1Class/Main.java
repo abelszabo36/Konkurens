@@ -1,1 +1,2 @@
 //micsi skan
+// szia skanom
