@@ -1,8 +1,9 @@
+
 package Employee;
 
-public class Employee{
+public abstract class Employee{
         private String name;
-        private int salary;
+        protected int salary;
 
         public Employee(String name, int salary)
         {
@@ -10,10 +11,7 @@ public class Employee{
             this.salary = salary;
         }
 
-        public int getSalary()
-        {
-            return this.salary;
-        }
+        abstract int getSalary();
 
         public String getName()
         {
@@ -26,3 +24,4 @@ public class Employee{
         }
 
     }
+
