@@ -1,8 +1,7 @@
 package Employee;
-
-public class Employee{
-        private String name;
-        private int salary;
+public abstract class Employee implements SalariedEntity{
+        private final String name;
+        protected int salary;
 
         public Employee(String name, int salary)
         {
@@ -10,9 +9,10 @@ public class Employee{
             this.salary = salary;
         }
 
+        @Override 
         public int getSalary()
         {
-            return this.salary;
+            return salary;
         }
 
         public String getName()
@@ -26,3 +26,5 @@ public class Employee{
         }
 
     }
+
+
